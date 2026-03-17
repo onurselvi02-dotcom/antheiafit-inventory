@@ -95,7 +95,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--blue)}
 <script>
 const {useState,useEffect,useMemo,useCallback,useRef,Fragment}=React;
 
-const API="http://localhost:3000/api";
+const API="/api";
 
 const fmtEur=n=>n?`€${Math.round(n).toLocaleString("nl-NL")}`:"€0";
 const fmtDays=n=>n>=9999?"∞":`${Math.round(n)}d`;
